@@ -1,0 +1,38 @@
+{
+  "name": "weather-widget",
+  "version": "1.0.0",
+  "description": "My First App on NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./src/index.js",
+    "prod": "node ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrLibr/NodeJS---Weather-Widget.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "JsCore",
+    "Widget",
+    "Weather"
+  ],
+  "author": "Maxim Li:br Pavlenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrLibr/NodeJS---Weather-Widget/issues"
+  },
+  "homepage": "https://github.com/MrLibr/NodeJS---Weather-Widget#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.5",
+    "eslint": "^7.6.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "express": "^4.17.1",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

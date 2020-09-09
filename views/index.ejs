@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="/css/styles.css">
+    <title>Weather Widget</title>
+  </head>
+
+  <body>
+
+    <main class="app">
+
+      <header class="app__header">
+
+        <% if (weather) { %>
+        <h1><%=weather%>&#8451;</h1>
+        <% } %>
+
+        <% if (error) { %>
+        <p class="error"><%=error%></p>
+        <% } %>
+
+        <form action="/"
+              method="POST"
+              class="app__content">
+          <div class="input">
+            <label for="city">City:</label>
+            <input id="city"
+                   name="city"
+                   type="text"
+                   placeholder="Name Your City">
+          </div>
+          <button class="btn"
+                  type="submit">View Me Weather</button>
+        </form>
+      </header>
+
+    </main>
+  </body>
+
+</html>
