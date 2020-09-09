@@ -11,26 +11,15 @@ app.use( bodyParser.urlencoded( {
 } ) );
 
 app.get( '/', ( req, res ) => {
-  res.render( 'index', {
-    weather: null,
-    error: null
-  } );
+  res.render( 'index', { weather: null, error: null } );
 } );
 
 app.post( '/', async ( req, res ) => {
-  const {
-    city,
-  } = req.body;
+  const { city } = req.body;
 
-  const {
-    weather,
-    error
-  } = await weatherRequest( city );
+  const { weather, error } = await weatherRequest( city );
 
-  res.render( 'index', {
-    weather,
-    error
-  } );
+  res.render( 'index', { weather, error } );
 } );
 
 app.listen( 3300, () => {
